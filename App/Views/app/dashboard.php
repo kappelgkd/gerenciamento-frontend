@@ -45,6 +45,15 @@
             </div>
         </div>
 
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Enviar Notificação</h5>
+                    <a href="/enviar-notificacao" class="btn btn-primary">Enviar</a>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 

@@ -110,6 +110,12 @@ class Route extends Bootstrap {
 			'action' => 'enviarNotificacaoTelegram'
 		);
 
+		$routes['enviar-notificacao'] = array(
+			'route' => '/enviar-notificacao',
+			'controller' => 'UtilsController',
+			'action' => 'enviarNotificacao'
+		);
+
 		$this->setRoutes($routes);
 	}
 

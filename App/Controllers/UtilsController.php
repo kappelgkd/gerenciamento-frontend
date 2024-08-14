@@ -12,4 +12,10 @@ class UtilsController extends Action{
         return $protocolo;
         
     }
+
+    public function enviarNotificacao(){
+        
+       
+        
+    }
 }

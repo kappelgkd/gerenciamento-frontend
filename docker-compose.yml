@@ -12,7 +12,7 @@ services:
     volumes:
       - ./:/var/www/html
     ports:
-      - "2000:80"
+      - "8000:80"
     env_file:
      - .env
     restart: always

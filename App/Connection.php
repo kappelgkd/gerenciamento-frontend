@@ -10,9 +10,9 @@ class Connection {
 		try {
 
 			$conn = new \PDO(
-				"mysql:host=192.168.0.3;dbname=gerenciamento_pessoal_hmg",
+				"mysql:host=mysql.kappelgkd.com.br;dbname=gerenciamento_pessoal",
 				"root",
-				"1234" 
+				"qWrm91826384@02" 
 			);
 			
 			return $conn;

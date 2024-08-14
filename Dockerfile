@@ -16,7 +16,7 @@ WORKDIR /var/www/html
 COPY composer.json .
 
 # Instale as dependências, incluindo a biblioteca firebase/php-jwt (que suporta JWT)
-RUN composer install --no-scripts --no-autoloader
+# RUN composer install --no-scripts --no-autoloader
 
 # Copie o restante dos arquivos da aplicação para o diretório de trabalho
 COPY . .
