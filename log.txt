@@ -1,0 +1,2 @@
+[2023-12-09T02:24:11.701410+00:00] log_app.WARNING: Esta é uma mensagem de aviso [] []
+[2023-12-09T02:24:11.728902+00:00] log_app.ERROR: Isso é um erro! Uma notificação será enviada para o bot do Telegram. [] []
