@@ -49,7 +49,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="card-title">Enviar Notificação</h5>
-                    <a href="/enviar-notificacao" class="btn btn-primary">Enviar</a>
+                    <button type="button" id="btnEnviarNotificacao" class="btn btn-primary">Enviar</button>
                 </div>
             </div>
         </div>
@@ -87,3 +87,9 @@
         font-size: 36px;
     }
 </style>
+
+<script>
+    $("#btnEnviarNotificacao").click(function() {
+        //alert(1);
+    });
+</script>
