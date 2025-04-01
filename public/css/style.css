@@ -1,7 +1,6 @@
 /* Defina a paleta de cores roxas personalizada */
 body {
-    background-color: #7b68ee;
-    /* color: #fff; */
+    
 }
 
 .menu {
@@ -86,8 +85,9 @@ body {
 
 
 body {
-    /* background-color: #7e57c2; */
+    background-color: #ecebee;
     /* display: flex; */
+
     justify-content: center;
     align-items: center;
     height: 100vh;
