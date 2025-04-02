@@ -22,6 +22,9 @@
 
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
 
+		<!-- Adicione isso no head do seu HTML para os ícones -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
 	</head>
 
 	<body>

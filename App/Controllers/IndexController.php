@@ -14,40 +14,14 @@ class IndexController extends Action {
 
 	}
 
-	public function dashboard() {
+	public function login() {
 
-		$this->render('dashboard');
+		$this->render('login');
 	}
 
-	public function inscreverse() {
 	
-		$this->render('inscreverse');
+
 	
-	}
-
-	public function registrar() {
-
-		/*
-			NESSE METODO VAMOS RECEBER OS DADOS DO FORMULÁRIO DE REGISTRO DE USUÁRIOS
-			E VAI PASSAR AS INFORMAÇÕES PARA O MODEL DE USUÁRIOS.
-
-		*/
-		
-		// INSTANCIANDO A CLASSE DO MODEL QUE SERÁ UTILIZADA.
-		$usuario = Container::getModel('Usuario');
-
-		// TRATANDO OS DADOS PARA ENTÃO PASSAR PARA O MODEL.
-		// print_r($_POST);
-		// exit;
-		$usuario->__set('login', $_POST['login']);
-		$usuario->__set('nome', $_POST['nome']);
-		$usuario->__set('email', $_POST['email']);
-		$usuario->__set('senha', $_POST['senha']);
-		$usuario->salvar(); // MÉTODO DO MODEL USUARIOS PARA MANIPULAR AS INFORMAÇÕES NA BASE DE DADOS.
-		
-		// $this->render('registrar');
-	
-	}
 
 }
 
