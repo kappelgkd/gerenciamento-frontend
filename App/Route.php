@@ -21,6 +21,19 @@ class Route extends Bootstrap {
 			'action' => 'login'
 		);
 
+		$routes['blog'] = array(
+			'route' => '/blog',
+			'controller' => 'DashBoardController',
+			'action' => 'blog'
+		);
+
+
+		$routes['organizacao'] = array(
+			'route' => '/organizacao',
+			'controller' => 'DashBoardController',
+			'action' => 'organizacao'
+		);
+
 		$this->setRoutes($routes);
 	}
 

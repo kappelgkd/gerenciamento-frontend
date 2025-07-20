@@ -1,5 +1,9 @@
-<link rel="stylesheet" type="text/css" href="css/login.css">
-
+<script src="javascript/index.js"></script>
+<script>
+    if(verificarToken()){
+        window.location.href = '/blog';
+    }
+</script>
 <div class="green-animated-bg"></div>
 
 <div class="row justify-content-center">
@@ -12,10 +16,10 @@
                         <p class="text-muted">Faça login para acessar sua conta</p>
                     </div>
                     
-                    <form class="login-form">
+                    <form class="login-form" id="login-form">
                         <div class="form-group mb-3">
                             <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
+                            <input type="text" class="form-control" id="login" placeholder="seu@email.com" required>
                         </div>
                         
                         <div class="form-group mb-3">
@@ -65,4 +69,6 @@
     </div>
 </div>
 
+
 <script src="javascript/login.js"></script>
+<link rel="stylesheet" type="text/css" href="css/login.css">

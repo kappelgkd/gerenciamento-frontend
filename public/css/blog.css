@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.card-post {
+    transition: all 0.3s ease;
+    background-color: #ffffffdd;
+    border-left: 5px solid #4ca1af;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 100%; */
+}
+
+.card-post:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.autor-data {
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-align: right;
+    margin-bottom: 0.8rem;
+}
+
+.titulo-post {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.conteudo-post {
+    font-size: 1rem;
+    color: #495057;
+    text-align: left;
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.ver-mais-container {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.ver-mais-btn {
+    cursor: pointer;
+    background-color: #4ca1af;
+    color: #fff;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.ver-mais-btn:hover {
+    background-color: #3a8c9e;
+}
