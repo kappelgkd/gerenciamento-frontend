@@ -1,5 +1,6 @@
 function verificarToken() {
     const token = localStorage.getItem("token");
+    alert(token);
     if (!token) {
         return false;
     }

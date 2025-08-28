@@ -35,7 +35,7 @@ document.getElementById('login-form').addEventListener('submit', async function 
         const data = await response.json();
         // alert(data);
         if (response.ok) {
-            console.log(data);
+            // console.log(data);
             localStorage.setItem('token',data.token);
             // alert('Login bem sucedido.');
             window.location.href = '/blog';
