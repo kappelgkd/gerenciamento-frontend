@@ -23,7 +23,7 @@ document.getElementById('modalEditor').addEventListener('shown.bs.modal', carreg
 async function carregarTiposDeConteudo() {
     try {
         const token = localStorage.getItem('token');
-        const response = await fetch('http://localhost:9000/listar-tipo', {
+        const response = await fetch('https://api.kappelgkd.com.br/listar-tipo', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ document.getElementById('formConteudo').addEventListener('submit', async functio
     const payload = { titulo, tipo, conteudo };
 
     try {
-        const response = await fetch('http://localhost:9000/cadastrar-conteudo', {
+        const response = await fetch('https://api.kappelgkd.com.br/cadastrar-conteudo', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -119,7 +119,7 @@ const token = localStorage.getItem('token');
 
 async function buscarItensDaAPI() {
     try {
-        const response = await fetch('http://localhost:9000/listar-conteudo', {
+        const response = await fetch('https://api.kappelgkd.com.br/listar-conteudo', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
