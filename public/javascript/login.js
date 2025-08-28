@@ -24,7 +24,7 @@ document.getElementById('login-form').addEventListener('submit', async function 
     const senha = document.getElementById('senha').value;
     
     try {
-        const response = await fetch('http://192.168.1.90:9000/login', {
+        const response = await fetch('https://api.kappelgkd.com.br/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
