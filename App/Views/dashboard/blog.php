@@ -22,14 +22,14 @@
 
 <!-- Modal -->
 <div class="modal fade" id="modalEditor" tabindex="-1" aria-labelledby="modalEditorLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable" style="max-width: 90vw;">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl modal-fullscreen-md-down">
         <div class="modal-content">
             <div class="modal-header bg-primary text-white">
                 <h5 class="modal-title" id="modalEditorLabel">Novo Conteúdo</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
             </div>
 
-            <div class="modal-body px-4" style="min-height: 600px;"> <!-- Aumentei a altura mínima do body do modal -->
+            <div class="modal-body px-4" style="max-height: 70vh; overflow-y: auto;"> 
                 <form id="formConteudo">
                     <div class="mb-3">
                         <label for="titulo" class="form-label fw-semibold">Título</label>
@@ -40,7 +40,7 @@
                         <!-- Tipos de conteúdo serão inseridos aqui -->
                     </div>
 
-                    <div class="mb-3" style="height: 400px;"> <!-- Altura maior para o CKEditor -->
+                    <div class="mb-3" style="height: 35vh;"> <!-- Altura proporcional ao viewport -->
                         <label for="editor" class="form-label fw-semibold">Conteúdo</label>
                         <textarea id="editor" name="conteudo" style="height: 100%;"></textarea>
                     </div>

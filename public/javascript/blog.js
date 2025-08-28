@@ -93,12 +93,12 @@ document.getElementById('formConteudo').addEventListener('submit', async functio
             alert(data.message || 'Conteúdo cadastrado com sucesso!');
 
             const modalEl = document.getElementById('modalEditor');
-            let modal = bootstrap.Modal.getInstance(modalEl);
-            if (!modal) modal = new bootstrap.Modal(modalEl);
+            const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
             modal.hide();
 
             document.getElementById('formConteudo').reset();
             ckeditorInstance.setData('');
+            window.location.href = '/blog';
 
             if (typeof iniciar === 'function') iniciar();
         } else {
